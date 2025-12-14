@@ -1,0 +1,17 @@
+//Leet Code Problem: Maximum Subarray
+//My Submission Link: https://leetcode.com/problems/maximum-subarray/solutions/7412820/kadanes-algorithm-for-maximum-subarray-s-ii7y
+
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+        int cSum = 0, mSum = INT_MIN;
+        for(int val : nums){
+            cSum += val;
+            mSum = max(cSum, mSum);
+            if(cSum < 0)
+                cSum = 0;
+        }
+        return mSum;
+    }
+    
+};
