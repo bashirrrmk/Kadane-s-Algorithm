@@ -1,4 +1,4 @@
 # Kadane's Algorithm
-This is my Github repository.
+This is my first Github repository.
 <br>
 Author - Bashir Ahmad.
